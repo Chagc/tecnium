@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TECNIUM - Entrega 3</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF6600", // Ternium Orange
+                        secondary: "#FFB600", // Ternium Yellow
+                        "ternium-gray": "#555555",
+                        "ternium-light-gray": "#9E9E9E",
+                        "background-light": "#F4F5F7",
+                        "background-dark": "#18181b",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#27272a",
+                        "border-light": "#E5E7EB",
+                        "border-dark": "#3F3F46",
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.375rem",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 font-sans transition-colors duration-200">
+    <header class="sticky top-0 z-50 w-full border-b border-solid border-slate-200 bg-white/95 backdrop-blur-md">
+        <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center justify-center size-9 rounded bg-primary text-white">
+                    <span class="material-symbols-outlined text-xl">architecture</span>
+                </div>
+                <h2 class="text-ternium-gray text-xl font-bold tracking-tight">TECNIUM</h2>
+            </div>
+            <nav class="hidden md:flex flex-1 justify-center gap-8">
+                <a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors"
+                    href="team.html">Team</a>
+                <a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors"
+                    href="entregable1.html">Entregable 1</a>
+                <a class="text-slate-600 hover:text-primary text-sm font-medium transition-colors border-b-2 border-primary"
+                    href="entregable3.html">Entregable 3</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="flex items-center justify-center rounded-lg h-9 px-4 bg-primary hover:bg-primary-hover text-white shadow-md shadow-orange-900/10 transition-colors text-sm font-bold">
+                    <span>Contact / Info</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full">
+        <!-- Hero Section -->
+        <div
+            class="bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark py-8 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-3xl font-bold leading-7 text-gray-900 dark:text-white sm:text-4xl sm:truncate">
+                    Entrega 3: Propuesta e Implementación TO-BE
+                </h1>
+                <p class="mt-2 text-lg text-gray-500 dark:text-gray-400">
+                    Propuesta de valor, Arquitectura y Flujos esperados (TO-BE).
+                </p>
+            </div>
+        </div>
+
+        <!-- 1. Propuesta de Valor -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-zinc-900">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <span class="material-symbols-outlined text-4xl text-primary mr-3">redeem</span>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">1. Propuesta de Valor</h2>
+                </div>
+                <div class="p-6 bg-orange-50 dark:bg-orange-900/10 rounded-lg border-l-4 border-primary">
+                    <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                        Nuestra propuesta busca solucionar el problema operativo derivado de la falta de control preciso en el inventario de rollos de polietileno. Al implementar un sistema automatizado de escaneo por código de barras o QR, eliminamos el error humano provocado por la estimación visual "a ojo". 
+                    </p>
+                    <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                        Esto asegura que la información reflejada en el sistema ERP coincida en tiempo real con el inventario físico, optimizando la planificación de las máquinas, previniendo paros técnicos no programados en las líneas de corte, reduciendo el desperdicio (scrap) de material y elevando la eficiencia operativa global de Ternium.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Arquitectura Empresarial TO-BE -->
+        <section
+            class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-black/20 border-t border-b border-gray-200 dark:border-gray-800">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <span class="material-symbols-outlined text-4xl text-ternium-gray mr-3">architecture</span>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">2. Arquitectura Empresarial TO-BE</h2>
+                </div>
+                <div
+                    class="bg-white dark:bg-surface-dark p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="relative w-full h-[600px] bg-gray-100 dark:bg-gray-800 rounded border border-gray-300 dark:border-gray-600 overflow-hidden shadow-inner flex items-center justify-center">
+                        <p class="text-gray-500 dark:text-gray-400 absolute z-0">Diagrama de Arquitectura TO-BE</p>
+                        <iframe src="files/TECNIUM ArchiMate.pdf" width="100%" height="100%"
+                            class="border-0 relative z-10" title="Arquitectura Empresarial TO-BE"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. BPMN TO-BE -->
+        <section
+            class="py-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-zinc-900 border-b border-gray-200 dark:border-gray-800">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <span class="material-symbols-outlined text-4xl text-secondary mr-3">account_tree</span>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">3. Diagrama BPMN (TO-BE)</h2>
+                </div>
+                <div
+                    class="bg-white dark:bg-surface-dark p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+                    <div
+                        class="relative w-full h-[600px] bg-gray-100 dark:bg-gray-800 rounded border border-gray-300 dark:border-gray-600 overflow-hidden shadow-inner flex items-center justify-center">
+                        <p class="text-gray-500 dark:text-gray-400 absolute z-0">Diagrama BPMN TO-BE</p>
+                        <iframe src="files/BMPN To Be.pdf" width="100%" height="100%" class="border-0 relative z-10"
+                            title="Diagrama BPMN TO-BE"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Aprendizaje -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-black/20">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <span class="material-symbols-outlined text-4xl text-primary mr-3">lightbulb</span>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">4. Aprendizaje</h2>
+                </div>
+                <div class="p-6 bg-white dark:bg-surface-dark rounded-lg shadow border-t-4 border-secondary">
+                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                        Durante el diseño de la arquitectura empresarial e implementación de los flujos TO-BE, adquirimos conocimientos valiosos sobre la integración de sistemas en plantas industriales. Comprendimos que la digitalización no se trata únicamente de colocar escáneres, sino de asegurar que la infraestructura tecnológica soporte actualizaciones en tiempo real y que el personal en piso de producción acepte y adopte positivamente las nuevas herramientas.
+                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                        Además, aprendimos la importancia de la trazabilidad. Mapear meticulosamente el esquema "As-Is" nos permitió detectar las verdaderas fallas, que no eran de producción en sí, sino de comunicación de datos. Esta experiencia refuerza nuestra visión sistemática: un proceso productivo de clase mundial como el de Ternium requiere que incluso los insumos secundarios fluyan con tanta exactitud en el sistema de información como lo hacen en la realidad física.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white mt-auto">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-400">© 2026 TECNIUM & TERNIUM Collaboration. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
