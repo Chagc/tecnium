@@ -92,11 +92,15 @@
                 </div>
                 <div class="p-6 bg-orange-50 dark:bg-orange-900/10 rounded-lg border-l-4 border-primary">
                     <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                        Nuestra propuesta busca solucionar el problema operativo derivado de la falta de control preciso en el inventario de rollos de polietileno. Al implementar un sistema automatizado de escaneo por código de barras o QR, eliminamos el error humano provocado por la estimación visual "a ojo". 
+                        Como solución a la falta de visibilidad y dependencia de estimaciones visuales en el consumo de polietileno , como equipo pensamos en un sistema de gestión inteligente basado en telemetría del encoder y redes de ethernet que resuelve los errores de registro manual y la carencia de datos en tiempo real mediante un sistema de automatización con análisis predictivo, junto a un sistema de QR dinamicos que apoyaran la eficiencia en piso planta. 
+                    </p>
+                    <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                        Como beneficios están la automatización del inventario mediante el Movimiento 201 en SAP  y la reducción de costos por la recuperación de baches reutilizables gracias a un modelo de IA predictiva, el cual es capaz de pronosticar el agotamiento de stock y gestionar la reposición de rollos. Para implementarla, la arquitectura integra reglas para la toma de decisiones de corte automáticas y el cálculo preciso de metros cuadrados basado en el diámetro y ancho del rollo capturados por el dispositivo TECNIUM. 
                     </p>
                     <p class="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-                        Esto asegura que la información reflejada en el sistema ERP coincida en tiempo real con el inventario físico, optimizando la planificación de las máquinas, previniendo paros técnicos no programados en las líneas de corte, reduciendo el desperdicio (scrap) de material y elevando la eficiencia operativa global de Ternium.
+                        De igual forma, se establece una comunicación bidireccional entre el Sistema Nivel 2 y SAP ERP-MM , respaldada por una infraestructura de red Ethernet industrial que conecta los PLC y el hardware IoT con los sistemas de impresión de QR dinámico. Creemos que esta digitalización permitirá eliminar la suposición manual y alcanzar un control total sobre el ciclo de vida del material, aasegurando una trazabilidad exacta desde el almacén hasta el producto final etiquetado.
                     </p>
+
                 </div>
             </div>
         </section>
@@ -114,7 +118,7 @@
                     <div
                         class="relative w-full h-[600px] bg-gray-100 dark:bg-gray-800 rounded border border-gray-300 dark:border-gray-600 overflow-hidden shadow-inner flex items-center justify-center">
                         <p class="text-gray-500 dark:text-gray-400 absolute z-0">Diagrama de Arquitectura TO-BE</p>
-                        <iframe src="files/TECNIUM ArchiMate.pdf" width="100%" height="100%"
+                        <iframe src="files/TECNIUM_ArchiMate_ToBe.pdf" width="100%" height="100%"
                             class="border-0 relative z-10" title="Arquitectura Empresarial TO-BE"></iframe>
                     </div>
                 </div>
@@ -141,19 +145,42 @@
             </div>
         </section>
 
+        <!-- 4. Prototipo IA -->
+        <section>
+            <div class="max-w-7xl mx-auto">
+                <div class="flex items-center mb-6">
+                    <span class="material-symbols-outlined text-4xl text-primary mr-3">lightbulb</span>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">4. Prototipo IA</h2>
+                </div>
+                <div class="p-10 bg-gradient-to-br from-orange-50 to-white dark:from-orange-950/10 dark:to-surface-dark rounded-3xl border border-orange-100 dark:border-orange-900/20 shadow-xl flex flex-col items-center text-center">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-2xl mb-6 transform rotate-3">
+                        <span class="material-symbols-outlined text-5xl text-primary">rocket_launch</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Explora el MVP de TECNIUM</h3>
+                    <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mb-8 leading-relaxed">
+                        Visualiza nuestra implementación funcional del modelo predictivo y el dashboard de telemetría diseñado para optimizar el piso de planta en tiempo real.
+                    </p>
+                    <a href="https://tecnium-mvp.vercel.app/" target="_blank" class="inline-flex items-center px-10 py-4 bg-primary hover:bg-orange-600 text-white font-black rounded-2xl transition-all shadow-xl shadow-orange-500/40 hover:scale-105 active:scale-95">
+                        <span>PROTOTIPO</span>
+                        <span class="material-symbols-outlined ml-3">bolt</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
         <!-- 4. Aprendizaje -->
         <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-black/20">
             <div class="max-w-7xl mx-auto">
                 <div class="flex items-center mb-6">
                     <span class="material-symbols-outlined text-4xl text-primary mr-3">lightbulb</span>
-                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">4. Aprendizaje</h2>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">5. Aprendizaje</h2>
                 </div>
                 <div class="p-6 bg-white dark:bg-surface-dark rounded-lg shadow border-t-4 border-secondary">
                     <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                        Durante el diseño de la arquitectura empresarial e implementación de los flujos TO-BE, adquirimos conocimientos valiosos sobre la integración de sistemas en plantas industriales. Comprendimos que la digitalización no se trata únicamente de colocar escáneres, sino de asegurar que la infraestructura tecnológica soporte actualizaciones en tiempo real y que el personal en piso de producción acepte y adopte positivamente las nuevas herramientas.
-                    </p>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                        Además, aprendimos la importancia de la trazabilidad. Mapear meticulosamente el esquema "As-Is" nos permitió detectar las verdaderas fallas, que no eran de producción en sí, sino de comunicación de datos. Esta experiencia refuerza nuestra visión sistemática: un proceso productivo de clase mundial como el de Ternium requiere que incluso los insumos secundarios fluyan con tanta exactitud en el sistema de información como lo hacen en la realidad física.
+                        El uso de estas plataformas fue fundamental para transformar la problemática de Ternium en una solución estructurada bajo el marco de Arquitectura Empresarial. Jira funcionó como el motor de nuestra metodología de organización Agile-Scrum, permitiendo la gestión eficiente de tareas y entregables durante cada Sprint. Con SAP Signavio, logramos el modelado BPMN, tanto “As Is”, como "To Be"; aprendizaje que fue clave para rediseñar procesos de negocio donde la recopilación manual es sustituida por automatización. El uso de Archi (ArchiMate) nos permitió integrar las capas de aplicaciones e infraestructura, visualizando nuestra propuesta de cómo la telemetría del hardware se comunica bidireccionalmente con el SAP ERP de la compañía para ejecutar movimientos de inventario automáticos. Por último, GitHub formó parte importante, puesto que a través de esta plataforma creamos nuestro repositorio web, facilitando una entrega profesional y transparente de toda la documentación técnica para la empresa, al igual que de nuestro 
                     </p>
                 </div>
             </div>
